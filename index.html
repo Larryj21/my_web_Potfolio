@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larry M Jigu</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="video-container">
+      <video autoplay muted loop id="bg-video" class="bg-video">
+        <source src="assets/dark-bg.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <nav class="nav-container">
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links" id="nav-links">
+        <button onclick="location.href='#about-me'">About</button>
+        <button onclick="location.href='#skills'">Skills</button>
+        <button onclick="location.href='#Projects-and-Certifications'">
+          Projects and Certifications
+        </button>
+        <button onclick="location.href='#Projects-In-Progress'">
+          Projects In Progress
+        </button>
+        <button onclick="location.href='#contact-info'">Contact</button>
+      </div>
+
+      <div class="theme-switch-wrapper">
+        <i class="fas fa-moon"></i>
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+        <i class="fas fa-sun"></i>
+      </div>
+    </nav>
+
+    <!--This is my About me section -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <h1
+      class="about_me_tittle"
+      style="text-align: center; color: #716e6e; margin-top: 100px"
+    >
+      About Me
+    </h1>
+    <div id="about-me" class="About_me">
+      <div class="image_container">
+        <img src="assets/P-Photo.jpg" class="image" alt="Profile Photo" />
+      </div>
+
+      <div class="Info_container">
+        <div class="name">
+          <h1>Larry M Jigu</h1>
+        </div>
+
+        <div class="Professional_Introduction">
+          <h3>Professional Introduction</h3>
+          <pre>
+I'm a <span>Computer Science</span> student dedicated to building
+the invisible architecture that powers modern applications. My work sits
+at the intersection of <span>Backend Development</span> and <span>Cloud Infrastructure</span>,
+with a specialized focus on creating systems that are as resilient
+as they are efficient. I bridge the gap between complex data and user centric solutions, 
+leveraging <span>Data Analysis</span> to inform architectural decisions
+and <span>DevOps</span> practices to ensure seamless delivery. I don't just build
+features; I build environments where software can thrive at scale.
+          </pre>
+          <hr />
+
+          <h3>Academic & Career Focus</h3>
+          <pre>
+<img src="assets/mark.svg" alt="mark icon" /> My current academic path is centered on mastering the lifecycle of
+high-performance software. In the realm of <span>Backend Development</span>,
+I specialize in building robust APIs and server-side logic using
+<span>Python (FastAPI & Django)</span>.
+<img src="assets/mark.svg" alt="mark icon" /> To support these builds, I am deepening 
+my expertise in <span>Cloud Development and DevOps</span>, focusing on containerization,
+automation, and CI/CD pipelines to streamline deployment. Parallel to this, I 
+apply <span>Data Analysis</span> to interpret system metrics and user behavior, ensuring
+that every project is optimized for both performance and impact.
+<img src="assets/mark.svg" alt="mark icon" /> My ultimate goal is
+to architect end-to-end ecosystems that are data-driven and cloud-native.
+          </pre>
+        </div>
+      </div>
+    </div>
+    <section class="counters-container">
+      <div class="counter-card" id="deployment-card">
+        <div class="counter-number" data-target="15">0</div>
+        <div class="counter-label">System Deployments</div>
+        <p class="disclaimer">
+          Targeting 15+ production-ready cloud deployments by graduation.
+        </p>
+      </div>
+
+      <div class="counter-card" id="github-card">
+        <div class="counter-number" data-target="2500">0</div>
+        <div class="counter-label">Lines of Code Deployed</div>
+        <p class="disclaimer">
+          Live sync with GitHub API. Refreshes every 30 mins.
+        </p>
+      </div>
+
+      <div class="counter-card" id="tech-card">
+        <div class="floating-icons-container">
+          <div class="tech-icon"><i class="fab fa-python"></i></div>
+          <div class="tech-icon"><i class="fab fa-react"></i></div>
+          <div class="tech-icon"><i class="fas fa-database"></i></div>
+          <div class="tech-icon"><i class="fab fa-docker"></i></div>
+          <div class="tech-icon"><i class="fab fa-html5"></i></div>
+          <div class="tech-icon"><i class="fab fa-css3"></i></div>
+          <div class="tech-icon"><i class="fab fa-js"></i></div>
+        </div>
+        <div class="counter-number" data-target="10">0</div>
+        <div class="counter-label">Core Technologies Proficient</div>
+      </div>
+    </section>
+
+    <!--This is my Skills section -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+
+    <section id="skills" class="skills-section">
+      <h1 class="section-title">Technical Expertise</h1>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="card-front">
+            <i class="fas fa-code"></i>
+            <h3>Languages</h3>
+            <p>Python, VB.Net, JavaScript, SQL, HTML, CSS</p>
+          </div>
+          <div class="card-back">
+            <h4>Core Proficiency</h4>
+            <ul>
+              <li>
+                <span>Python:</span> fairly fluent in Backend logic & Data
+                Analysis.
+              </li>
+              <li>
+                <span>VB.Net:</span> Made a few projects with this
+                Object-oriented language for Windows applications.
+              </li>
+              <li><span>JavaScript:</span> Modern ES6+ for interactive UI.</li>
+              <li>
+                <span>SQL:</span> Fairly fluent in Database querying and schema
+                design.
+              </li>
+              <li>
+                <span>HTML:</span> Still learning this Markup language for
+                structuring web content.
+              </li>
+              <li>
+                <span>CSS:</span> Fairly Okay in the Styling language for
+                designing web pages.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="card-front">
+            <i class="fas fa-layer-group"></i>
+            <h3>Frameworks</h3>
+            <p>FastAPI, Django, React, Node.js, Tailwind CSS</p>
+          </div>
+          <div class="card-back">
+            <h4>Development Stack</h4>
+            <h6>I'm still learning and developing my skills in them</h6>
+            <ul>
+              <li>
+                <span>FastAPI & Django:</span> Building robust, scalable REST
+                APIs.
+              </li>
+              <li>
+                <span>React:</span> Developing single-page applications (SPAs).
+              </li>
+              <li>
+                <span>Node.js:</span> Server-side JavaScript environments.
+              </li>
+              <li>
+                <span>Tailwind CSS:</span> Utility-first CSS framework for rapid
+                UI development.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="card-front">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+            <p>Docker, Git, Linux, AWS</p>
+          </div>
+          <div class="card-back">
+            <h4>DevOps & Infrastructure</h4>
+            <ul>
+              <li>
+                <span>Docker:</span> Containerization for consistent
+                environments.
+              </li>
+              <li>
+                <span>Git/GitHub:</span> Version control and CI/CD pipelines.
+              </li>
+              <li>
+                <span>AWS:</span> Learning Cloud services for deployment and
+                scaling for future work use.
+              </li>
+              <li>
+                Discovering and learning<span>Linux:</span> for Proficient in
+                CLI and server management.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="card-front">
+            <i class="fas fa-database"></i>
+            <h3>Databases</h3>
+            <p>PostgreSQL, SQLite</p>
+          </div>
+          <div class="card-back">
+            <h4>Data Management</h4>
+            <ul>
+              <li>
+                <span>PostgreSQL:</span>Fairly proficient in Advanced relational
+                data structures.
+              </li>
+              <li>
+                Okay in <span>SQLite:</span> Lightweight local data storage.
+              </li>
+              <li>
+                <span>Database Design:</span> Normalization and optimization.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--This is my Projects and Certification section -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <section id="Projects-and-Certifications" class="projects-section">
+      <h1 class="section-title">Projects & Certifications</h1>
+
+      <div class="huge-glass-card">
+        <div class="projects-grid">
+          <div class="grid-item">
+            <div class="item-image">
+              <img src="assets/tiktok.png" alt="TikTok Login Page" />
+            </div>
+            <div class="vertical-line"></div>
+            <div class="item-info">
+              <h3>TikTok Login Page</h3>
+              <p>
+                My first attempt learning web development, a simple TikTok login
+                page clone built just to learn
+              </p>
+              <p class="tech-stack">
+                <strong>Tech:</strong> HTML & CSS (Frontend), JavaScript
+                (Frontend)
+              </p>
+              <a href="#" class="demo-link" data-url="assets/tiktok.mp4"
+                >Demo Now</a
+              >
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="item-image">
+              <img src="assets/calculator.png" alt="Trojan Calculator" />
+            </div>
+            <div class="vertical-line"></div>
+            <div class="item-info">
+              <h3>Calculator(Trojan Horse)</h3>
+              <p>
+                This is a simple calculator application built using Python's
+                Tkinter library.But serves as a Trojan Horse thats a keyLogger
+              </p>
+              <p class="tech-stack">
+                <strong>Tech:</strong> Python. HTML, CSS, JavaScript (On the
+                data receiving side)
+              </p>
+              <a href="#" class="demo-link" data-url="assets/calculator.mp4"
+                >Demo Now</a
+              >
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="item-image">
+              <img
+                src="assets/AI.png"
+                alt="AI-Powered Cybersecurity Fundamentals Certification"
+              />
+            </div>
+            <div class="vertical-line"></div>
+            <div class="item-info">
+              <h3>Cybersecurity Fundamentals (AI-Enhanced)</h3>
+              <p>
+                Professional certification centered on the intersection of
+                machine learning and digital defense.
+              </p>
+              <p class="tech-stack"><strong>Issued by:</strong> ALISON</p>
+              <a
+                href="https://alison.com/verify/6a62e1b779"
+                target="_blank"
+                class="demo-link"
+                >Verify Credential</a
+              >
+            </div>
+          </div>
+
+          <div class="grid-item">
+            <div class="item-image">
+              <img
+                src="assets/OS.png"
+                alt="Operating Systems - Deadlocks and Threads Certification"
+              />
+            </div>
+            <div class="vertical-line"></div>
+            <div class="item-info">
+              <h3>
+                Systems Programming: Advanced Multithreading & Resource
+                Management
+              </h3>
+              <p>
+                Professional certification focusing on the critical mechanics of
+                concurrent computing and system stability.
+              </p>
+              <p class="tech-stack"><strong>Issued by:</strong> ALISON</p>
+              <a
+                href="https://alison.com/user/learner-verification/46937555/1543"
+                target="_blank"
+                class="demo-link"
+                >Verify Credential</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="demo-modal" class="modal-overlay">
+      <div class="modal-window">
+        <div class="modal-header">
+          <h3>Live Demo</h3>
+          <button id="close-modal" class="close-btn">&times;</button>
+        </div>
+        <div class="modal-body">
+          <iframe id="demo-frame" src="" frameborder="0"></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!--This is my projects in progress section -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+    <section id="Projects-In-Progress" class="vanguard-section">
+      <h1 class="section-title">Projects in Progress</h1>
+
+      <div class="huge-glass-card vanguard-main-container">
+        <div class="vanguard-content">
+          <div class="item-image vanguard-hero-image">
+            <img src="assets/vanguard.png" alt="Project Vanguard Logo" />
+          </div>
+
+          <div class="vertical-line"></div>
+
+          <div class="item-info vanguard-info">
+            <h3>Project Vanguard: Financial Forensic Engine</h3>
+            <div class="project-details">
+              <p>
+                Project Vanguard is a high-performance, asynchronous engine
+                built to revolutionize deep data analysis in financial
+                forensics. It focuses on identifying patterns and anomalies that
+                traditional systems often overlook.
+              </p>
+              <ul>
+                <li>
+                  <span>Asynchronous Architecture:</span> Leveraging
+                  non-blocking I/O for high-speed transaction processing.
+                </li>
+                <li>
+                  <span>Heuristic Analysis:</span> Implementing custom
+                  algorithms to detect sophisticated financial fraud patterns.
+                </li>
+                <li>
+                  <span>Modular Forensic Engine:</span> A plug-and-play system
+                  allowing for specialized analysis across different banking
+                  sectors.
+                </li>
+                <li>
+                  <span>Data Visualization:</span> Dynamic React-based
+                  dashboards for real-time investigation tracking.
+                </li>
+              </ul>
+            </div>
+
+            <div class="vanguard-footer">
+              <div class="tech-stack-row">
+                <strong>Technologies:</strong>
+                <span class="tech-tag">Python (FastAPI)</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <p class="completion-disclaimer">
+                <i class="fas fa-calendar-alt"></i>
+                Projected Completion: <strong>October 2026</strong> (Currently
+                in Development...pending commitee response)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--This is my contact section -->
+    <!-------------------------------------------------------------------->
+    <!-------------------------------------------------------------------->
+
+    <section id="contact-info" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-profile-img">
+          <img src="assets/P-Photo.jpg" alt="Larry M Jigu" />
+        </div>
+
+        <h1 class="section-title">Get In Touch</h1>
+
+        <div class="huge-glass-card contact-card">
+          <div class="contact-layout">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/your-id-here"
+              method="POST"
+            >
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can I help you?"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">Send Message</button>
+              <p id="form-status"></p>
+            </form>
+
+            <div class="vertical-line"></div>
+
+            <div class="social-links-container">
+              <h3>Connect With Me</h3>
+              <div class="social-icons">
+                <a
+                  href="https://linkedin.com/in/larry-jigu-7a9b88362"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/Larryj21"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="https://instagram.com/larry.j21"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://wa.me/0787913474"
+                  target="_blank"
+                  class="social-icon"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
+              <p>
+                I am currently open to internship opportunities and technical
+                collaborations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="small-icon">&lt;/ LJ &gt;</p>
+        <p class="footer-p">&copy; 2026 Larry M Jigu. All Rights Reserved.</p>
+        <div class="footer-bottom-line"></div>
+      </div>
+    </footer>
+
+    <script src="function.js"></script>
+  </body>
+</html>
